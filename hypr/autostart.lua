@@ -13,4 +13,7 @@
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
 
-hl.exec_cmd("waybar")
+hl.on("hyprland.start", function()
+  hl.exec_cmd("waybar")
+  hl.exec_cmd("hyprpaper")
+end)

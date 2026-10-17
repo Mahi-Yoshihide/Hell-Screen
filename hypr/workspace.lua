@@ -47,3 +47,24 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+hl.window_rule({
+    name = "wallpaper-picker-window",
+    match = { class = "^wallpaper-picker$" },
+
+    float = true,
+    size = "600 300",
+    move = {
+        "cursor_x-(window_w*0.5)",
+        "cursor_y-(window_h*0.5)",
+    },
+})
+
+hl.window_rule({
+    name = "kitty-floating-terminal",
+    match = { class = "^kitty$" },
+
+    float = true,
+    size = "60% 40%",
+    center = true,
+})
